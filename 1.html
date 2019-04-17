@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>TITLE</title>
+     <meta name="description" content="DESCRIPTION">
+
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+ <body>
+   <div id="app">
+    {{ message }}
+   </div>
+   <div id="app-2">
+   <span v-bind:title="message">
+    Наведи на меня курсор на пару секунд,
+    чтобы увидеть динамически связанное значение title!
+   </span>
+   </div>
+   <div id="app-3" v-if="seen">
+     <p>placeholder for v-if</p>
+   </div>
+<h1>sample of v-for</h1>
+   <div id="app-4">
+     <ol>
+       <li v-for="todo in todos">
+         {{ todo.text }}
+       </li>
+     </ol>
+   </div>
+
+
+   <!-- <script src="vue.js"></script> -->
+   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+   <script src="1.js"></script>
+ </body>
+ </html>
