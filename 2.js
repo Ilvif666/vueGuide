@@ -1,7 +1,8 @@
 var app5 = new Vue({
   el: '#app-5',
   data: {
-    message: 'привет'
+    message: 'привет',
+    message2: 'konichiwa'
   },
   methods: {
     reverseMessage: function () {
